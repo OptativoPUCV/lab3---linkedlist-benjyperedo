@@ -8,3 +8,14 @@ Thu 28 Mar 2024 02:50:21 AM UTC:
  tests:  1|5
 total_score: 10/70
 b6dd1ce
+Thu 28 Mar 2024 02:55:19 AM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘nextList’:
+list.c:45:31: error: ‘*newlist.head’ is used uninitialized [-Werror=uninitialized]
+   45 |     newlist->current = newlist->head->next;
+      |                        ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ccac641
