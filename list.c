@@ -39,6 +39,7 @@ List * createList() {
 void * firstList(List * list) {
     List* newlist = (List*) malloc(sizeof(List));
     newlist->current = list->current->next;
+    newlist->current->next = NULL;
     return newlist;
 }
 
