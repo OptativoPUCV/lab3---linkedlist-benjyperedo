@@ -35,3 +35,14 @@ Thu 28 Mar 2024 02:58:53 AM UTC:
  1 file changed, 1 insertion(+)
  tests:  0|0
 46b73dc
+Thu 28 Mar 2024 02:59:11 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘firstList’:
+list.c:42:12: error: ‘*newlist.head’ is used uninitialized [-Werror=uninitialized]
+   42 |     newlist->head->next = NULL;
+      |     ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a8c2b1c
