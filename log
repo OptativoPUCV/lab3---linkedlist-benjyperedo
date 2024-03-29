@@ -161,3 +161,21 @@ Fri 29 Mar 2024 03:59:45 PM UTC:
  tests:  11|1
 total_score: 55/70
 0c2792a
+Fri 29 Mar 2024 09:00:41 PM UTC: 
+ list.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:11: error: unused variable ‘data’ [-Werror=unused-variable]
+  122 |     void* data = list->current->data;
+      |           ^~~~
+list.c:142:10: error: ‘data’ undeclared (first use in this function)
+  142 |   return data;
+      |          ^~~~
+list.c:142:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:143:1: error: control reaches end of non-void function [-Werror=return-type]
+  143 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+985da1e
