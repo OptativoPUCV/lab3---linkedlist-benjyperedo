@@ -119,7 +119,7 @@ void * popCurrent(List * list) {
     return NULL;
   }
   else{
-    void* data = list->current->data;
+    int* data = list->current->data;
     if(list->current->prev == NULL){
       list->head = list->current->next;
       if(list->current->next == NULL){
@@ -139,7 +139,7 @@ void * popCurrent(List * list) {
       }
     }
   }
-  return list->current->data;
+  return data;
 }
 
 void cleanList(List * list) {
