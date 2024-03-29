@@ -139,7 +139,7 @@ void * popCurrent(List * list) {
       }
     }
   }
-  return data;
+  return list->current->data;
 }
 
 void cleanList(List * list) {
